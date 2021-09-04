@@ -4,7 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="box">
+      <div class="hero">
+        <h2>IDS Luxury Watches</h2>
+        <p>
+          Your go to stop place for high quality wrist accesories & devices!
+        </p>
+        <button>FOR SELLERS</button>
+      </div>
+      <div class="register">
+        <img src="./images/cronometer.PNG" alt="" />
+        <h2>Sign Up Below!</h2>
+        <form action="">
+          <div class="input-container">
+            <label for="">First Name</label>
+            <input type="text" required placeholder="Name" />
+          </div>
+
+          <div class="input-container">
+            <label for="">Last Name</label>
+            <input type="text" required placeholder="Name" />
+          </div>
+          <div class="input-container email">
+            <label for="">Email Address</label>
+            <input
+              type="email"
+              required
+              placeholder="Email"
+              pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+              oninvalid="this.setCustomValidity('Please enter a valid email')"
+              oninput="this.setCustomValidity('')"
+            />
+            <p id="isValid" class="hidden">Email address validated!</p>
+          </div>
+          <div class="input-container">
+            <label for="">Password</label>
+            <input
+              type="password"
+              required
+              placeholder="Password"
+              pattern="(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{4,16}"
+              oninvalid="this.setCustomValidity('4 characters minimum, letters, symbols and numbers required')"
+              oninput="this.setCustomValidity('')"
+            />
+            <i
+              class="far fa-eye"
+              id="togglePassword"
+              style="margin-left: -20px; cursor: pointer; color: gray"
+            ></i>
+          </div>
+          <div class="input-container">
+            <label for="">City</label>
+            <input type="text" required placeholder="City" />
+          </div>
+          <div class="input-container">
+            <label for="">Country</label>
+            <input
+              type="text"
+              required
+              placeholder="Select City First"
+              disabled
+            />
+          </div>
+
+          <button type="submit">SIGN UP</button>
+        </form>
+        <a href="./login.html">Already have an account? Sign in!</a>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

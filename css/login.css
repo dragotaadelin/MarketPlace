@@ -1,0 +1,53 @@
+.box {
+  height: 75vh;
+  width: 60vw;
+}
+
+.register {
+  flex: 1;
+}
+
+form {
+  display: block;
+  text-align: center;
+}
+
+form label {
+  width: 300px;
+  margin: auto;
+  text-align: left;
+}
+
+form button {
+  padding: 10px 100px;
+}
+
+@media screen and (max-width: 1490px) {
+  .register {
+    flex: 3;
+  }
+
+  .hero {
+    padding: 20vh 30px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .box {
+    height: 90vh;
+    width: 80vw;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  form input,
+  form label {
+    width: 230px;
+  }
+
+  form button {
+    padding: 10px 60px;
+  }
+}

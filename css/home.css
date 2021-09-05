@@ -3,6 +3,7 @@ body > * {
   height: 11.11%;
 }
 
+/* General changes */
 header,
 .trial {
   background-color: rgb(36, 49, 67);
@@ -24,15 +25,18 @@ nav,
   height: 65vh;
 }
 
-.down,
-footer {
+.down {
   height: 30vh;
+}
+
+footer {
+  height: 25vh;
 }
 
 .up {
   background-image: linear-gradient(
-      rgba(31, 41, 57, 0.8),
-      rgba(31, 41, 57, 0.8)
+      rgba(31, 41, 57, 0.6),
+      rgba(31, 41, 57, 0.6)
     ),
     url("../images/home-hero1.jpg");
 
@@ -50,6 +54,8 @@ footer {
 .last {
   background-color: rgb(246, 249, 251);
 }
+
+/*  HEADER CHANGES */
 
 header {
   color: rgb(179, 195, 212);
@@ -81,6 +87,8 @@ header ul li {
   font-size: 20px;
 }
 
+/* NAV CHANGES */
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -98,6 +106,8 @@ nav ul li:hover {
   background-color: rgb(246, 249, 251);
   cursor: pointer;
 }
+
+/* FIRST HERO SECTION CHANGES */
 
 .up {
   padding: 120px 100px 0 100px;
@@ -121,14 +131,16 @@ nav ul li:hover {
   color: rgb(160, 160, 160);
 }
 
-.first {
-  padding-top: 50px;
+/* FIRST SHOWCASE CHANGES */
+
+.display {
+  padding-top: 30px;
   text-align: center;
 }
 
 .box {
-  height: 70%;
-  margin: 10px 20%;
+  height: 75%;
+  margin: 10px 15%;
   display: flex;
   gap: 20px;
 }
@@ -147,13 +159,14 @@ nav ul li:hover {
   border-radius: 5px;
 }
 
-.showcase img {
+.showcase img,
+.block img {
   width: 100%;
   height: 60%;
 }
 
 .show-story {
-  padding: 15px 25px;
+  padding: 5px 20px;
 }
 
 .big {
@@ -177,7 +190,144 @@ nav ul li:hover {
   background-color: rgb(246, 249, 251);
 }
 
-@media screen and (max-width: 450px) {
+/* SECOND HERO CHANGES */
+
+.down {
+  padding-top: 40px;
+}
+
+.down button {
+  background-color: transparent;
+  border: 2px solid orange;
+  padding: 10px 50px;
+}
+
+.down button:hover {
+  background-color: rgb(36, 49, 67);
+}
+
+/* SECOND SHOWCASE */
+.second .box {
+  overflow: auto;
+}
+
+.second .box .showcase {
+  flex: 1;
+}
+
+.second .show-story {
+  margin-top: 25px;
+}
+
+.second .show-story p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+.second .showcase img {
+  height: 45%;
+}
+
+/* Third SHOWCASE */
+
+.grid {
+  height: 70%;
+  margin: 10px 20%;
+  display: grid;
+  grid-template-rows: 160px 160px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.grid img {
+  border-radius: 5px;
+  box-shadow: 0px 2px rgba(208, 208, 208, 0.8);
+}
+
+.grid p {
+  font-size: 13px;
+  text-align: left;
+  color: rgb(36, 49, 67);
+}
+
+/* TRIAl */
+
+.trial {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 30px;
+}
+
+.trial button {
+  padding: 10px 60px;
+  height: 36px;
+}
+
+.trial p {
+  font-size: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 13px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  margin: 6px;
+}
+
+footer li:first-child {
+  color: rgb(179, 195, 212);
+  font-weight: 700;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(36, 49, 67);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 1300px) {
+  .box,
+  .grid {
+    margin: 10px 10px;
+    gap: 10px;
+  }
+
+  .trial p,
+  .trial button {
+    font-size: 11px;
+  }
+  .trial button {
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 550px) {
   header ul li {
     font-size: 11px;
   }
@@ -186,21 +336,54 @@ nav ul li:hover {
     margin-right: 10px;
   }
 
-  .up {
-    padding: 50px 0 0 0;
+  .hero {
     font-size: 11px;
+    padding: 50px 10px 0 10px;
   }
 
-  .up p {
+  .hero p {
     font-size: 13px;
   }
 
-  .up button {
+  .hero button {
     padding: 10px;
   }
 
   .fa,
   .fas {
     display: none;
+  }
+
+  .display {
+    font-size: 11px;
+  }
+
+  .box {
+    gap: 0;
+  }
+
+  .show-story p,
+  .grid p {
+    font-size: 10px;
+  }
+
+  .second .show-story p {
+    font-size: 10px;
+  }
+  .show-story button {
+    font-size: 10px;
+  }
+
+  .show-story h4 {
+    font-size: 9px;
+  }
+
+  .trial button {
+    font-size: 9px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 10px;
   }
 }

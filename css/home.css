@@ -334,13 +334,18 @@ footer li:first-child {
   font-weight: 700;
 }
 
-footer a {
+a {
   text-decoration: none;
   color: rgb(36, 49, 67);
 }
 
-footer a:hover {
+a:hover {
   text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(36, 49, 67);
 }
 
 /* MEDIA QUERIES  */

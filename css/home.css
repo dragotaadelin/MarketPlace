@@ -64,6 +64,10 @@ header {
   justify-content: space-around;
 }
 
+header a {
+  color: rgb(179, 195, 212);
+}
+
 header ul {
   display: inline;
 }

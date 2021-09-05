@@ -93,7 +93,8 @@ header ul li {
 
 /* NAV CHANGES */
 
-nav ul {
+nav > ul {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -101,7 +102,7 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+nav > ul li {
   line-height: 60px;
   flex-basis: 50%;
   text-align: center;
@@ -109,6 +110,35 @@ nav ul li {
 nav ul li:hover {
   background-color: rgb(246, 249, 251);
   cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+
+  top: 60px;
+  background-color: #f9f9f9;
+  width: 50vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.dropdown li {
+  text-align: center;
+}
+
+nav ul li:hover + .dropdown,
+.dropdown:hover {
+  display: block;
 }
 
 /* FIRST HERO SECTION CHANGES */

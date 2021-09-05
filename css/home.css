@@ -1,0 +1,206 @@
+body > * {
+  /* border: 2px solid black; */
+  height: 11.11%;
+}
+
+header,
+.trial {
+  background-color: rgb(36, 49, 67);
+}
+
+header,
+nav,
+.trial {
+  height: 60px;
+}
+
+.first,
+.second,
+.last {
+  height: 75vh;
+}
+
+.up {
+  height: 65vh;
+}
+
+.down,
+footer {
+  height: 30vh;
+}
+
+.up {
+  background-image: linear-gradient(
+      rgba(31, 41, 57, 0.8),
+      rgba(31, 41, 57, 0.8)
+    ),
+    url("../images/home-hero1.jpg");
+
+  background-position-y: 60%;
+}
+
+.down {
+  background-image: linear-gradient(
+      rgba(31, 41, 57, 0.92),
+      rgba(31, 41, 57, 0.92)
+    ),
+    url("../images/home-hero2.jpg");
+}
+
+.last {
+  background-color: rgb(246, 249, 251);
+}
+
+header {
+  color: rgb(179, 195, 212);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  display: inline;
+}
+
+header ul li {
+  display: inline-block;
+  line-height: 30px;
+}
+
+.options li {
+  margin-right: 25px;
+}
+
+.options li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fa,
+.fas {
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  line-height: 60px;
+  flex-basis: 50%;
+  text-align: center;
+}
+nav ul li:hover {
+  background-color: rgb(246, 249, 251);
+  cursor: pointer;
+}
+
+.up {
+  padding: 120px 100px 0 100px;
+  text-align: center;
+}
+
+.up p {
+  margin-top: 35px;
+}
+
+.up input {
+  height: 36px;
+  width: 35%;
+}
+
+.up button {
+  padding: 10px 35px;
+}
+
+.display p {
+  color: rgb(160, 160, 160);
+}
+
+.first {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.box {
+  height: 70%;
+  margin: 10px 20%;
+  display: flex;
+  gap: 20px;
+}
+
+.first .box .showcase {
+  flex: 1;
+}
+
+.first .box .showcase:first-child {
+  flex: 2;
+}
+
+.box .showcase {
+  box-shadow: 0px 1px rgba(208, 208, 208, 0.8);
+  border: 1px solid rgba(208, 208, 208, 0.8);
+  border-radius: 5px;
+}
+
+.showcase img {
+  width: 100%;
+  height: 60%;
+}
+
+.show-story {
+  padding: 15px 25px;
+}
+
+.big {
+  text-align: left;
+}
+
+.show-story p {
+  color: rgb(36, 49, 67);
+  font-size: 14px;
+  text-align: left;
+}
+
+.show-story button {
+  padding: 5px 15px;
+  background-color: white;
+  color: rgb(160, 160, 160);
+  border: 1px solid rgb(160, 160, 160);
+}
+
+.show-story button:hover {
+  background-color: rgb(246, 249, 251);
+}
+
+@media screen and (max-width: 450px) {
+  header ul li {
+    font-size: 11px;
+  }
+
+  .options li {
+    margin-right: 10px;
+  }
+
+  .up {
+    padding: 50px 0 0 0;
+    font-size: 11px;
+  }
+
+  .up p {
+    font-size: 13px;
+  }
+
+  .up button {
+    padding: 10px;
+  }
+
+  .fa,
+  .fas {
+    display: none;
+  }
+}

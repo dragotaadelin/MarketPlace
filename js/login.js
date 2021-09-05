@@ -2,7 +2,6 @@ let form = document.querySelector("form");
 let inputs = form.getElementsByTagName("input");
 let email = inputs[0];
 let password = inputs[1];
-
 const togglePassword = document.querySelector("#togglePassword");
 
 email.addEventListener("keyup", () => {

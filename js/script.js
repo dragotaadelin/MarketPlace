@@ -7,14 +7,6 @@ let password = inputs[3];
 let isValid = document.getElementById("isValid");
 const togglePassword = document.querySelector("#togglePassword");
 
-city.addEventListener("keyup", () => {
-  if (city.value) {
-    country.removeAttribute("disabled");
-  } else {
-    country.setAttribute("disabled", "");
-  }
-});
-
 email.addEventListener("keyup", () => {
   if (email.checkValidity()) {
     email.style.border = "1px solid green";
@@ -34,4 +26,12 @@ togglePassword.addEventListener("click", function (e) {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   window.location.href = "../login.html";
+});
+
+city.addEventListener("keyup", () => {
+  if (city.value) {
+    country.removeAttribute("disabled");
+  } else {
+    country.setAttribute("disabled", "");
+  }
 });

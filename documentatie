@@ -1,21 +1,31 @@
 Proiect: MarketPlace
 Autor: Dragota Adelin-Iulian
 
+
 Scop: Scopul principal al proiectului este crearea unui prototip pentru un site de cumparaturi.
 
-Tehnologii folosite:
--HTML: HyperText Markup Language (HTML) este un limbaj de marcare utilizat pentru crearea paginilor web ce pot fi afișate într-un browser (sau navigator). Scopul HTML este mai degrabă prezentarea informațiilor – paragrafe, fonturi, tabele ș.a.m.d. – decât descrierea semanticii documentului. În cadrul dezvoltării web de tip front-end, HTML este utilizat împreună cu CSS și JavaScript. 
 
+Tehnologii folosite:
+-HTML: HyperText Markup Language (HTML) este un limbaj de marcare utilizat pentru crearea paginilor web ce pot fi afișate într-un browser (sau navigator). Scopul HTML este mai degrabă prezentarea informațiilor – paragrafe, fonturi, tabele ș.a.m.d. – decât descrierea semanticii documentului. În cadrul dezvoltării web de tip front-end, HTML este utilizat împreună cu CSS și JavaScript.
 
 -CSS: CSS sau Cascading Style Sheets este un standard pentru formatarea elementelor unui document HTML. Stilurile se pot atașa elementelor HTML prin intermediul unor fișiere externe sau în cadrul documentului, prin elementul <style> și/sau atributul style. CSS se poate utiliza și pentru formatarea elementelor XHTML, XML și SVGL.CSS este unui dintre tehnologiile de bază utilizate în procesul de dezvoltare web, împreună cu HTML și JavaScript.
 
 CSS permite separarea și prezentarea vizuală a conținutului unei pagini web, inclusiv culorile și fonturile disponibile. Separarea elementelor unei pagini îmbunătățește accesibilitatea paginii și permite o mai bună flexibilitate și un control în specificațiile caracteristicilor de prezentare.
 
-
 -JavaScript: JavaScript (JS) este un limbaj de programare orientat obiect bazat pe conceptul prototipurilor. Este folosit mai ales pentru introducerea unor funcționalități în paginile web, codul JavaScript din aceste pagini fiind rulat de către browser. Limbajul este binecunoscut pentru folosirea sa în construirea siturilor web, dar este folosit și pentru accesul la obiecte încapsulate (embedded objects) în alte aplicații
-
 
 -Git: Git este un sistem version control care rulează pe majoritatea platformelor, inclusiv Linux, POSIX, Windows și OS X. Ca și Mercurial, Git este un sistem distribuit și nu întreține o bază de date comună. Este folosit în echipe de dezvoltare mari, în care membrii echipei acționează oarecum independent și sunt răspândiți pe o arie geografică mare.
 
 
 
+Structura aplicatie:
+Aplicatia incepe cu o pagina de inregistrare in care ne putem crea un cont functional, in urma inregistratri vom ajunge la o pagina de login unde
+ne putem folosi datele inregistrate pentru a intra in aplicatie, vom fi trimisi la pagina Home.
+
+Pagina Home are mai multe elemente care not pot trimite ori la pagina unde sunt listate toate produsele ori la pagini specifice anumitor produsele,
+aceasta pagina si toate paginile care urmeaza contin si linkuri care ne duc la pagini externe.
+
+Pagina 'Products page' contine o lista cu toate produsele valabile, acestea pot fi filtrate cu ajutorul meniului din stanga. Produsele listate au butoane
+care ne trimit la paginile specifice lor.
+
+Paginile specifice contin informatii despre produs.

@@ -4,6 +4,14 @@ let email = inputs[0];
 let password = inputs[1];
 const togglePassword = document.querySelector("#togglePassword");
 
+function verifyUser(mail, pass) {
+  if (localStorage.getItem(mail) === pass) {
+    window.location.href = "../home.html";
+  } else {
+    alert("Wrong user info. Try again.");
+  }
+}
+
 email.addEventListener("keyup", () => {
   if (email.checkValidity()) {
     email.style.border = "1px solid green";
@@ -20,5 +28,8 @@ togglePassword.addEventListener("click", function (e) {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  window.location.href = "../home.html";
+
+  const emailInput = email.value;
+  const passwordInput = password.value;
+  verifyUser(emailInput, passwordInput);
 });

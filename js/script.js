@@ -7,6 +7,10 @@ let password = inputs[3];
 let isValid = document.getElementById("isValid");
 const togglePassword = document.querySelector("#togglePassword");
 
+function saveInfo(mail, pass) {
+  localStorage.setItem(mail, pass);
+}
+
 email.addEventListener("keyup", () => {
   if (email.checkValidity()) {
     email.style.border = "1px solid green";
@@ -25,6 +29,11 @@ togglePassword.addEventListener("click", function (e) {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  const emailInput = email.value;
+  const passwordInput = password.value;
+  saveInfo(emailInput, passwordInput);
+
   window.location.href = "../login.html";
 });
 

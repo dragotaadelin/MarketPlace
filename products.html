@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/products.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -59,7 +60,65 @@
         </ul>
       </ul>
     </nav>
-    <section></section>
+    <section class="search">
+      <input
+        type="text"
+        placeholder="Search for a watch brand name or model.."
+      />
+      <a href="./products.html"><button>SEARCH</button></a>
+    </section>
+    <section class="main">
+      <div class="filter">
+        <ul>
+          <li>
+            <ul class="separate">
+              <li>BRAND</li>
+              <li>
+                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </li>
+          <ul class="filter-categories hidden">
+            <li><input type="checkbox" />Pulsar</li>
+            <li><input type="checkbox" />Rolex</li>
+            <li><input type="checkbox" />Rotary</li>
+            <li><input type="checkbox" />Seiko</li>
+            <li><input type="checkbox" />Sekonda</li>
+            <li><input type="checkbox" />Skagen</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>
+            <ul class="separate">
+              <li>MODEL</li>
+              <li>
+                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </li>
+          <ul class="filter-categories hidden">
+            <li><input type="checkbox" />Classic</li>
+            <li><input type="checkbox" />Sports</li>
+            <li><input type="checkbox" />Metallic</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>
+            <ul class="separate">
+              <li>GENDER</li>
+              <li>
+                <i class="fa fa-arrow-circle-down aria-hidden="true"></i>
+              </li>
+            </ul>
+          </li>
+          <ul class="filter-categories hidden">
+            <li><input type="checkbox" />Male</li>
+            <li><input type="checkbox" />Female</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="product-list"></div>
+    </section>
     <section class="trial">
       <p>Start your 30-day free trial today. Cancel or upgrade anytime.</p>
       <a href="./product pages/notfound.html" target="blank"
@@ -121,5 +180,6 @@
         </ul>
       </ul>
     </footer>
+    <script src="./js/products.js"></script>
   </body>
 </html>

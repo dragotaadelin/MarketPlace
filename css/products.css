@@ -1,0 +1,51 @@
+.hidden {
+  display: none;
+}
+
+.search {
+  text-align: center;
+  background-color: rgb(246, 249, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  margin-right: 5px;
+  border: 1px solid rgba(208, 208, 208, 0.9);
+}
+
+.main {
+  height: auto;
+  padding: 30px;
+  display: flex;
+}
+
+.main ul {
+  padding: 0;
+  line-height: 2;
+}
+
+.filter {
+  flex: 1;
+  background-color: rgb(246, 249, 251);
+  box-shadow: 1px 1px rgba(208, 208, 208, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.separate {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(160, 160, 160);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.filter i {
+  cursor: pointer;
+}
+
+.product-list {
+  flex: 4;
+}

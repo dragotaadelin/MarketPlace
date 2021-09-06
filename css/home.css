@@ -246,13 +246,15 @@ nav ul li:hover + .dropdown,
   padding-top: 40px;
 }
 
-.down button {
+.down button,
+.details {
   background-color: transparent;
   border: 2px solid orange;
   padding: 10px 50px;
 }
 
-.down button:hover {
+.down button:hover,
+.details:hover {
   background-color: rgb(36, 49, 67);
 }
 

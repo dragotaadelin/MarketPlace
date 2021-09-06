@@ -79,14 +79,14 @@
           </li>
           <ul class="filter-categories hidden">
             <li><input type="checkbox" onclick="filterSelection('all')" id="all" checked/>All</li>
-            <li><input type="checkbox" onclick="filterSelection('yazole')" />Yazole</li>
-            <li><input type="checkbox" onclick="filterSelection('rolex')" />Rolex</li>
-            <li><input type="checkbox" onclick="filterSelection('rotary')"/>Rotary</li>
-            <li><input type="checkbox" onclick="filterSelection('naviforce')"/>Naviforce</li>
-            <li><input type="checkbox" onclick="filterSelection('citizen')"/>Citizen</li>
-            <li><input type="checkbox" onclick="filterSelection('skagen')"/>Skagen</li>
-            <li><input type="checkbox" onclick="filterSelection('shinola')"/>Shinola</li>
-            <li><input type="checkbox" onclick="filterSelection('romanson')"/>Romanson</li>
+            <li><input type="checkbox" onclick="filterSelection('yazole')" id="yazole"/>Yazole</li>
+            <li><input type="checkbox" onclick="filterSelection('rolex')" id="rolex"/>Rolex</li>
+            <li><input type="checkbox" onclick="filterSelection('rotary')" id="rotary"/>Rotary</li>
+            <li><input type="checkbox" onclick="filterSelection('naviforce')" id="naviforce"/>Naviforce</li>
+            <li><input type="checkbox" onclick="filterSelection('citizen')" id="citizen"/>Citizen</li>
+            <li><input type="checkbox" onclick="filterSelection('skagen')" id="skagen"/>Skagen</li>
+            <li><input type="checkbox" onclick="filterSelection('shinola')" id="shinola"/>Shinola</li>
+            <li><input type="checkbox" onclick="filterSelection('romanson')" id="romanson"/>Romanson</li>
           </ul>
         </ul>
         <ul>
@@ -99,9 +99,9 @@
             </ul>
           </li>
           <ul class="filter-categories hidden">
-            <li><input type="checkbox" onclick="filterSelection('classic')"/>Classic</li>
-            <li><input type="checkbox" onclick="filterSelection('sport')"/>Sports</li>
-            <li><input type="checkbox" onclick="filterSelection('metallic')"/>Metallic</li>
+            <li><input type="checkbox" onclick="filterSelectionModel('classic')"  id="classic"/>Classic</li>
+            <li><input type="checkbox" onclick="filterSelectionModel('sport')"  id="sports"/>Sports</li>
+            <li><input type="checkbox" onclick="filterSelectionModel('metallic')"  id="metallic"/>Metallic</li>
           </ul>
         </ul>
         <ul>
@@ -130,7 +130,7 @@
             <h1 class="price">$36.000.00</h1>
           </div>
         </div>
-        <div class="showcase rotary">
+        <div class="showcase rotary classic">
           <p class="background" style="background-image: url(./images/product2.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -140,7 +140,7 @@
             <h1 class="price">$12.000.00</h1>
           </div>
         </div>
-        <div class="showcase naviforce">
+        <div class="showcase naviforce sport">
           <p class="background" style="background-image: url(./images/product3.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -150,7 +150,7 @@
             <h1 class="price">$45.000.00</h1>
           </div>
         </div>
-        <div class="showcase shinola">
+        <div class="showcase shinola metallic">
           <p class="background" style="background-image: url(./images/showcase11.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -160,7 +160,7 @@
             <h1 class="price">$23.000.00</h1>
           </div>
         </div>
-        <div class="showcase skagen">
+        <div class="showcase skagen sport">
           <p class="background" style="background-image: url(./images/showcase12.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -170,7 +170,7 @@
             <h1 class="price">$18.000.00</h1>
           </div>
         </div>
-        <div class="showcase romanson">
+        <div class="showcase romanson metallic">
           <p class="background" style="background-image: url(./images/product5.jpg);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -180,7 +180,7 @@
             <h1 class="price">$112.000.00</h1>
           </div>
         </div>
-        <div class="showcase citizen">
+        <div class="showcase citizen metallic">
           <p class="background" style="background-image: url(./images/product6.jpg);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -190,7 +190,7 @@
             <h1 class="price">$24.000.00</h1>
           </div>
         </div>
-        <div class="showcase rolex">
+        <div class="showcase rolex metallic">
           <p class="background" style="background-image: url(./images/product7.jpg);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -200,7 +200,7 @@
             <h1 class="price">$98.000.00</h1>
           </div>
         </div>
-        <div class="showcase citizen">
+        <div class="showcase citizen sport">
           <p class="background" style="background-image: url(./images/showcase31.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -210,7 +210,7 @@
             <h1 class="price">$14.000.00</h1>
           </div>
         </div>
-        <div class="showcase skagen">
+        <div class="showcase skagen classic">
           <p class="background" style="background-image: url(./images/showcase32.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -220,7 +220,7 @@
             <h1 class="price">$9.000.00</h1>
           </div>
         </div>
-        <div class="showcase rotary">
+        <div class="showcase rotary classic">
           <p class="background" style="background-image: url(./images/showcase33.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>
@@ -230,7 +230,7 @@
             <h1 class="price">$15.000.00</h1>
           </div>
         </div>
-        <div class="showcase rolex">
+        <div class="showcase rolex metallic">
           <p class="background" style="background-image: url(./images/product4.PNG);">
             <a href="./monday.html"  hidden><button class="details">VIEW DETAILS</button></a>
             <a href="./product pages/notfound.html" class="hidden"><button>ADD TO CART</button></a>

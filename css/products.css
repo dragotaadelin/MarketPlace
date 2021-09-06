@@ -85,11 +85,9 @@
   display: none;
 }
 
-.show {
-  display: block;
-}
-
-.show2 {
+.show,
+.show2,
+.show3 {
   display: block;
 }
 

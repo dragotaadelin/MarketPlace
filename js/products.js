@@ -3,6 +3,9 @@ const icons = main.getElementsByTagName("i");
 const filters = main.getElementsByClassName("filter-categories");
 const backgrounds = main.getElementsByClassName("background");
 const buttons = main.getElementsByTagName("button");
+const checkboxes = main.getElementsByTagName("input");
+let showcases = main.getElementsByClassName("showcase");
+const all = document.getElementById("all");
 
 for (let i = 0; i < icons.length; i++) {
   icons[i].addEventListener("click", () => {
@@ -10,14 +13,19 @@ for (let i = 0; i < icons.length; i++) {
     icons[i].classList.toggle("fa-arrow-circle-up");
   });
 }
+function filterSelection(category) {
+  showcases = main.getElementsByClassName("showcase");
+  if (category === "all") {
+    for (let showcase of showcases) {
+      showcase.classList.toggle("show");
+    }
+  } else {
+    for (let showcase of showcases) {
+      if (showcase.classList.contains(category)) {
+        showcase.classList.toggle("show2");
+      }
+    }
+  }
+}
 
-// for (let i = 0; i < backgrounds.length; i += 2) {
-//   backgrounds[i].addEventListener("mouseover", () => {
-//     buttons[i].classList.toggle("hidden");
-//     buttons[i + 1].classList.toggle("hidden");
-//   });
-//   backgrounds[i].addEventListener("mouseleave", () => {
-//     buttons[i].classList.toggle("hidden");
-//     buttons[i + 1].classList.toggle("hidden");
-//   });
-// }
+filterSelection("all");

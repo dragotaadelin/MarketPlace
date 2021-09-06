@@ -81,6 +81,18 @@
   display: block;
 }
 
+.showcase {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.show2 {
+  display: block;
+}
+
 @media screen and (max-width: 830px) {
   .main {
     padding-left: 0;
